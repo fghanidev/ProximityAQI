@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		910E54002768C23800174D5C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E53FF2768C23800174D5C /* DateExtension.swift */; };
+		910E540B2768CBAC00174D5C /* SGHandleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E54032768CBAC00174D5C /* SGHandleLayer.swift */; };
+		910E540C2768CBAC00174D5C /* SGTickLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E54042768CBAC00174D5C /* SGTickLayer.swift */; };
+		910E540D2768CBAC00174D5C /* SGBaseLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E54052768CBAC00174D5C /* SGBaseLayer.swift */; };
+		910E540E2768CBAC00174D5C /* SGGaugeValueLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E54062768CBAC00174D5C /* SGGaugeValueLayer.swift */; };
+		910E54102768CBAC00174D5C /* SmartGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E54082768CBAC00174D5C /* SmartGauge.swift */; };
+		910E54112768CBAC00174D5C /* SGTrackLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E54092768CBAC00174D5C /* SGTrackLayer.swift */; };
+		910E54122768CBAC00174D5C /* SGTickValuesLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E540A2768CBAC00174D5C /* SGTickValuesLayer.swift */; };
+		910E54142768D8CF00174D5C /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 910E54132768D8CF00174D5C /* Readme.md */; };
+		91C5DA13276646310059E785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA12276646310059E785 /* AppDelegate.swift */; };
+		91C5DA15276646310059E785 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA14276646310059E785 /* SceneDelegate.swift */; };
+		91C5DA1A276646310059E785 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C5DA18276646310059E785 /* Main.storyboard */; };
+		91C5DA1C276646330059E785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91C5DA1B276646330059E785 /* Assets.xcassets */; };
+		91C5DA1F276646330059E785 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C5DA1D276646330059E785 /* LaunchScreen.storyboard */; };
+		91C5DA2A276646330059E785 /* ProximityAQITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA29276646330059E785 /* ProximityAQITests.swift */; };
+		91C5DA34276646330059E785 /* ProximityAQIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA33276646330059E785 /* ProximityAQIUITests.swift */; };
+		91C5DA36276646330059E785 /* ProximityAQIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA35276646330059E785 /* ProximityAQIUITestsLaunchTests.swift */; };
+		91C5DA55276649210059E785 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA48276649210059E785 /* Log.swift */; };
+		91C5DA56276649210059E785 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA4A276649210059E785 /* GradientView.swift */; };
+		91C5DA57276649210059E785 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA4C276649210059E785 /* UIAlertControllerExtension.swift */; };
+		91C5DA58276649210059E785 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA4D276649210059E785 /* UIImageViewExtension.swift */; };
+		91C5DA59276649210059E785 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA4E276649210059E785 /* UIColorExtension.swift */; };
+		91C5DA5A276649210059E785 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA4F276649210059E785 /* NSObjectExtension.swift */; };
+		91C5DA5B276649210059E785 /* KeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA50276649210059E785 /* KeyedDecodingContainer.swift */; };
+		91C5DA5E276649210059E785 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA54276649210059E785 /* Bindable.swift */; };
+		91C5DA632766498B0059E785 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA612766498B0059E785 /* WebSocket.swift */; };
+		91C5DA642766498B0059E785 /* WebSocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA622766498B0059E785 /* WebSocketConnection.swift */; };
+		91C5DA6727664A180059E785 /* CityListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA6627664A180059E785 /* CityListTableViewCell.swift */; };
+		91C5DA6927664A580059E785 /* CityWiseAQIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA6827664A580059E785 /* CityWiseAQIViewController.swift */; };
+		91C5DA6B27664A830059E785 /* AQIChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA6A27664A830059E785 /* AQIChartViewController.swift */; };
+		91C5DA6E276670CE0059E785 /* CitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA6D276670CE0059E785 /* CitiesViewModel.swift */; };
+		91C5DA71276676FC0059E785 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA6F276676FC0059E785 /* City.swift */; };
+		91C5DA72276676FC0059E785 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA70276676FC0059E785 /* Cities.swift */; };
+		91C5DA74276678A80059E785 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA73276678A80059E785 /* CityViewModel.swift */; };
+		91C5DA7627667A280059E785 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5DA7527667A280059E785 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91C5DA26276646330059E785 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91C5DA07276646310059E785 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91C5DA0E276646310059E785;
+			remoteInfo = ProximityAQI;
+		};
+		91C5DA30276646330059E785 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91C5DA07276646310059E785 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91C5DA0E276646310059E785;
+			remoteInfo = ProximityAQI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		910E53FF2768C23800174D5C /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		910E54032768CBAC00174D5C /* SGHandleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGHandleLayer.swift; sourceTree = "<group>"; };
+		910E54042768CBAC00174D5C /* SGTickLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGTickLayer.swift; sourceTree = "<group>"; };
+		910E54052768CBAC00174D5C /* SGBaseLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGBaseLayer.swift; sourceTree = "<group>"; };
+		910E54062768CBAC00174D5C /* SGGaugeValueLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGGaugeValueLayer.swift; sourceTree = "<group>"; };
+		910E54082768CBAC00174D5C /* SmartGauge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartGauge.swift; sourceTree = "<group>"; };
+		910E54092768CBAC00174D5C /* SGTrackLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGTrackLayer.swift; sourceTree = "<group>"; };
+		910E540A2768CBAC00174D5C /* SGTickValuesLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGTickValuesLayer.swift; sourceTree = "<group>"; };
+		910E54132768D8CF00174D5C /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		91C5DA0F276646310059E785 /* ProximityAQI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProximityAQI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91C5DA12276646310059E785 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		91C5DA14276646310059E785 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		91C5DA19276646310059E785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91C5DA1B276646330059E785 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91C5DA1E276646330059E785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		91C5DA20276646330059E785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91C5DA25276646330059E785 /* ProximityAQITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProximityAQITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91C5DA29276646330059E785 /* ProximityAQITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityAQITests.swift; sourceTree = "<group>"; };
+		91C5DA2F276646330059E785 /* ProximityAQIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProximityAQIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91C5DA33276646330059E785 /* ProximityAQIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityAQIUITests.swift; sourceTree = "<group>"; };
+		91C5DA35276646330059E785 /* ProximityAQIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityAQIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		91C5DA48276649210059E785 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		91C5DA4A276649210059E785 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		91C5DA4C276649210059E785 /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		91C5DA4D276649210059E785 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		91C5DA4E276649210059E785 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		91C5DA4F276649210059E785 /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		91C5DA50276649210059E785 /* KeyedDecodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		91C5DA54276649210059E785 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		91C5DA612766498B0059E785 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		91C5DA622766498B0059E785 /* WebSocketConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketConnection.swift; sourceTree = "<group>"; };
+		91C5DA6627664A180059E785 /* CityListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListTableViewCell.swift; sourceTree = "<group>"; };
+		91C5DA6827664A580059E785 /* CityWiseAQIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWiseAQIViewController.swift; sourceTree = "<group>"; };
+		91C5DA6A27664A830059E785 /* AQIChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIChartViewController.swift; sourceTree = "<group>"; };
+		91C5DA6D276670CE0059E785 /* CitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewModel.swift; sourceTree = "<group>"; };
+		91C5DA6F276676FC0059E785 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		91C5DA70276676FC0059E785 /* Cities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
+		91C5DA73276678A80059E785 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		91C5DA7527667A280059E785 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91C5DA0C276646310059E785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91C5DA22276646330059E785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91C5DA2C276646330059E785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		910E54022768CBAC00174D5C /* GaugeView */ = {
+			isa = PBXGroup;
+			children = (
+				910E54032768CBAC00174D5C /* SGHandleLayer.swift */,
+				910E54042768CBAC00174D5C /* SGTickLayer.swift */,
+				910E54052768CBAC00174D5C /* SGBaseLayer.swift */,
+				910E54062768CBAC00174D5C /* SGGaugeValueLayer.swift */,
+				910E54082768CBAC00174D5C /* SmartGauge.swift */,
+				910E54092768CBAC00174D5C /* SGTrackLayer.swift */,
+				910E540A2768CBAC00174D5C /* SGTickValuesLayer.swift */,
+			);
+			path = GaugeView;
+			sourceTree = "<group>";
+		};
+		91C5DA06276646310059E785 = {
+			isa = PBXGroup;
+			children = (
+				910E54132768D8CF00174D5C /* Readme.md */,
+				91C5DA11276646310059E785 /* ProximityAQI */,
+				91C5DA28276646330059E785 /* ProximityAQITests */,
+				91C5DA32276646330059E785 /* ProximityAQIUITests */,
+				91C5DA10276646310059E785 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		91C5DA10276646310059E785 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91C5DA0F276646310059E785 /* ProximityAQI.app */,
+				91C5DA25276646330059E785 /* ProximityAQITests.xctest */,
+				91C5DA2F276646330059E785 /* ProximityAQIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91C5DA11276646310059E785 /* ProximityAQI */ = {
+			isa = PBXGroup;
+			children = (
+				91C5DA602766495B0059E785 /* NetworkHandler */,
+				91C5DA46276649210059E785 /* Utilities */,
+				91C5DA45276648DD0059E785 /* Models */,
+				91C5DA44276648D20059E785 /* Views */,
+				91C5DA43276648B60059E785 /* ViewModels */,
+				91C5DA42276648A00059E785 /* Constants */,
+				91C5DA12276646310059E785 /* AppDelegate.swift */,
+				91C5DA14276646310059E785 /* SceneDelegate.swift */,
+				91C5DA1B276646330059E785 /* Assets.xcassets */,
+				91C5DA20276646330059E785 /* Info.plist */,
+			);
+			path = ProximityAQI;
+			sourceTree = "<group>";
+		};
+		91C5DA28276646330059E785 /* ProximityAQITests */ = {
+			isa = PBXGroup;
+			children = (
+				91C5DA29276646330059E785 /* ProximityAQITests.swift */,
+			);
+			path = ProximityAQITests;
+			sourceTree = "<group>";
+		};
+		91C5DA32276646330059E785 /* ProximityAQIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				91C5DA33276646330059E785 /* ProximityAQIUITests.swift */,
+				91C5DA35276646330059E785 /* ProximityAQIUITestsLaunchTests.swift */,
+			);
+			path = ProximityAQIUITests;
+			sourceTree = "<group>";
+		};
+		91C5DA42276648A00059E785 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				91C5DA7527667A280059E785 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		91C5DA43276648B60059E785 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				91C5DA6D276670CE0059E785 /* CitiesViewModel.swift */,
+				91C5DA73276678A80059E785 /* CityViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		91C5DA44276648D20059E785 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				91C5DA5F276649430059E785 /* ViewControllers */,
+				91C5DA6C27664A920059E785 /* Storyboards */,
+				91C5DA65276649E40059E785 /* TableViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		91C5DA45276648DD0059E785 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				91C5DA6F276676FC0059E785 /* City.swift */,
+				91C5DA70276676FC0059E785 /* Cities.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		91C5DA46276649210059E785 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				910E54022768CBAC00174D5C /* GaugeView */,
+				91C5DA47276649210059E785 /* Logger */,
+				91C5DA49276649210059E785 /* CustomControls */,
+				91C5DA4B276649210059E785 /* Extensions */,
+				91C5DA53276649210059E785 /* Bindable */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		91C5DA47276649210059E785 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				91C5DA48276649210059E785 /* Log.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		91C5DA49276649210059E785 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				91C5DA4A276649210059E785 /* GradientView.swift */,
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		91C5DA4B276649210059E785 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				910E53FF2768C23800174D5C /* DateExtension.swift */,
+				91C5DA4C276649210059E785 /* UIAlertControllerExtension.swift */,
+				91C5DA4D276649210059E785 /* UIImageViewExtension.swift */,
+				91C5DA4E276649210059E785 /* UIColorExtension.swift */,
+				91C5DA4F276649210059E785 /* NSObjectExtension.swift */,
+				91C5DA50276649210059E785 /* KeyedDecodingContainer.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		91C5DA53276649210059E785 /* Bindable */ = {
+			isa = PBXGroup;
+			children = (
+				91C5DA54276649210059E785 /* Bindable.swift */,
+			);
+			path = Bindable;
+			sourceTree = "<group>";
+		};
+		91C5DA5F276649430059E785 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				91C5DA6827664A580059E785 /* CityWiseAQIViewController.swift */,
+				91C5DA6A27664A830059E785 /* AQIChartViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		91C5DA602766495B0059E785 /* NetworkHandler */ = {
+			isa = PBXGroup;
+			children = (
+				91C5DA612766498B0059E785 /* WebSocket.swift */,
+				91C5DA622766498B0059E785 /* WebSocketConnection.swift */,
+			);
+			path = NetworkHandler;
+			sourceTree = "<group>";
+		};
+		91C5DA65276649E40059E785 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				91C5DA6627664A180059E785 /* CityListTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		91C5DA6C27664A920059E785 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				91C5DA1D276646330059E785 /* LaunchScreen.storyboard */,
+				91C5DA18276646310059E785 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91C5DA0E276646310059E785 /* ProximityAQI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91C5DA39276646330059E785 /* Build configuration list for PBXNativeTarget "ProximityAQI" */;
+			buildPhases = (
+				91C5DA0B276646310059E785 /* Sources */,
+				91C5DA0C276646310059E785 /* Frameworks */,
+				91C5DA0D276646310059E785 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProximityAQI;
+			productName = ProximityAQI;
+			productReference = 91C5DA0F276646310059E785 /* ProximityAQI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91C5DA24276646330059E785 /* ProximityAQITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91C5DA3C276646330059E785 /* Build configuration list for PBXNativeTarget "ProximityAQITests" */;
+			buildPhases = (
+				91C5DA21276646330059E785 /* Sources */,
+				91C5DA22276646330059E785 /* Frameworks */,
+				91C5DA23276646330059E785 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91C5DA27276646330059E785 /* PBXTargetDependency */,
+			);
+			name = ProximityAQITests;
+			productName = ProximityAQITests;
+			productReference = 91C5DA25276646330059E785 /* ProximityAQITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		91C5DA2E276646330059E785 /* ProximityAQIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91C5DA3F276646330059E785 /* Build configuration list for PBXNativeTarget "ProximityAQIUITests" */;
+			buildPhases = (
+				91C5DA2B276646330059E785 /* Sources */,
+				91C5DA2C276646330059E785 /* Frameworks */,
+				91C5DA2D276646330059E785 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91C5DA31276646330059E785 /* PBXTargetDependency */,
+			);
+			name = ProximityAQIUITests;
+			productName = ProximityAQIUITests;
+			productReference = 91C5DA2F276646330059E785 /* ProximityAQIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91C5DA07276646310059E785 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					91C5DA0E276646310059E785 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					91C5DA24276646330059E785 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 91C5DA0E276646310059E785;
+					};
+					91C5DA2E276646330059E785 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 91C5DA0E276646310059E785;
+					};
+				};
+			};
+			buildConfigurationList = 91C5DA0A276646310059E785 /* Build configuration list for PBXProject "ProximityAQI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91C5DA06276646310059E785;
+			productRefGroup = 91C5DA10276646310059E785 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91C5DA0E276646310059E785 /* ProximityAQI */,
+				91C5DA24276646330059E785 /* ProximityAQITests */,
+				91C5DA2E276646330059E785 /* ProximityAQIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91C5DA0D276646310059E785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91C5DA1F276646330059E785 /* LaunchScreen.storyboard in Resources */,
+				91C5DA1C276646330059E785 /* Assets.xcassets in Resources */,
+				910E54142768D8CF00174D5C /* Readme.md in Resources */,
+				91C5DA1A276646310059E785 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91C5DA23276646330059E785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91C5DA2D276646330059E785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91C5DA0B276646310059E785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				910E54002768C23800174D5C /* DateExtension.swift in Sources */,
+				91C5DA5E276649210059E785 /* Bindable.swift in Sources */,
+				91C5DA71276676FC0059E785 /* City.swift in Sources */,
+				910E540C2768CBAC00174D5C /* SGTickLayer.swift in Sources */,
+				910E54122768CBAC00174D5C /* SGTickValuesLayer.swift in Sources */,
+				91C5DA58276649210059E785 /* UIImageViewExtension.swift in Sources */,
+				91C5DA6B27664A830059E785 /* AQIChartViewController.swift in Sources */,
+				91C5DA13276646310059E785 /* AppDelegate.swift in Sources */,
+				91C5DA6E276670CE0059E785 /* CitiesViewModel.swift in Sources */,
+				910E54112768CBAC00174D5C /* SGTrackLayer.swift in Sources */,
+				91C5DA59276649210059E785 /* UIColorExtension.swift in Sources */,
+				91C5DA642766498B0059E785 /* WebSocketConnection.swift in Sources */,
+				91C5DA6927664A580059E785 /* CityWiseAQIViewController.swift in Sources */,
+				910E54102768CBAC00174D5C /* SmartGauge.swift in Sources */,
+				91C5DA57276649210059E785 /* UIAlertControllerExtension.swift in Sources */,
+				91C5DA56276649210059E785 /* GradientView.swift in Sources */,
+				91C5DA55276649210059E785 /* Log.swift in Sources */,
+				910E540D2768CBAC00174D5C /* SGBaseLayer.swift in Sources */,
+				910E540B2768CBAC00174D5C /* SGHandleLayer.swift in Sources */,
+				91C5DA5B276649210059E785 /* KeyedDecodingContainer.swift in Sources */,
+				91C5DA5A276649210059E785 /* NSObjectExtension.swift in Sources */,
+				91C5DA15276646310059E785 /* SceneDelegate.swift in Sources */,
+				91C5DA7627667A280059E785 /* Constants.swift in Sources */,
+				91C5DA6727664A180059E785 /* CityListTableViewCell.swift in Sources */,
+				91C5DA632766498B0059E785 /* WebSocket.swift in Sources */,
+				91C5DA74276678A80059E785 /* CityViewModel.swift in Sources */,
+				91C5DA72276676FC0059E785 /* Cities.swift in Sources */,
+				910E540E2768CBAC00174D5C /* SGGaugeValueLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91C5DA21276646330059E785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91C5DA2A276646330059E785 /* ProximityAQITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91C5DA2B276646330059E785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91C5DA36276646330059E785 /* ProximityAQIUITestsLaunchTests.swift in Sources */,
+				91C5DA34276646330059E785 /* ProximityAQIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91C5DA27276646330059E785 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91C5DA0E276646310059E785 /* ProximityAQI */;
+			targetProxy = 91C5DA26276646330059E785 /* PBXContainerItemProxy */;
+		};
+		91C5DA31276646330059E785 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91C5DA0E276646310059E785 /* ProximityAQI */;
+			targetProxy = 91C5DA30276646330059E785 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		91C5DA18276646310059E785 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91C5DA19276646310059E785 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		91C5DA1D276646330059E785 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91C5DA1E276646330059E785 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91C5DA37276646330059E785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		91C5DA38276646330059E785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91C5DA3A276646330059E785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProximityAQI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.proximity.ProximityAQI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		91C5DA3B276646330059E785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProximityAQI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.proximity.ProximityAQI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		91C5DA3D276646330059E785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.proximity.ProximityAQITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProximityAQI.app/ProximityAQI";
+			};
+			name = Debug;
+		};
+		91C5DA3E276646330059E785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.proximity.ProximityAQITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProximityAQI.app/ProximityAQI";
+			};
+			name = Release;
+		};
+		91C5DA40276646330059E785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.proximity.ProximityAQIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProximityAQI;
+			};
+			name = Debug;
+		};
+		91C5DA41276646330059E785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.proximity.ProximityAQIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProximityAQI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91C5DA0A276646310059E785 /* Build configuration list for PBXProject "ProximityAQI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91C5DA37276646330059E785 /* Debug */,
+				91C5DA38276646330059E785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91C5DA39276646330059E785 /* Build configuration list for PBXNativeTarget "ProximityAQI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91C5DA3A276646330059E785 /* Debug */,
+				91C5DA3B276646330059E785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91C5DA3C276646330059E785 /* Build configuration list for PBXNativeTarget "ProximityAQITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91C5DA3D276646330059E785 /* Debug */,
+				91C5DA3E276646330059E785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91C5DA3F276646330059E785 /* Build configuration list for PBXNativeTarget "ProximityAQIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91C5DA40276646330059E785 /* Debug */,
+				91C5DA41276646330059E785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91C5DA07276646310059E785 /* Project object */;
+}
